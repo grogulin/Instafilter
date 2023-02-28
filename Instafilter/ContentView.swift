@@ -56,11 +56,7 @@ struct ContentView: View {
                 }
                 .onTapGesture(perform: selectImage)
                 
-                VStack {
-                    ForEach(effectKeys, id: \.self) {
-                        
-                    }
-                }
+                
                 HStack {
                     Text("Intensity \(filterIntensity.formatted())")
                     Slider(value: $filterIntensity, in: 0.01...1)
